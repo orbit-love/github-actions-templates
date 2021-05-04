@@ -25,7 +25,7 @@ Your Orbit API key can be find in your Orbit workspace by clicking on the pictur
 
 ![Orbit API key location](images/orbit_api_key_location.png)
 
-Your Orbit workspace ID is the part of your Orbit workspace URL that immediately followers the `app.orbit.love`. For example, if the URL was `https://app.orbit.love/my-workspace`, then your Orbit workspace ID is `my-workspace`.
+Your Orbit workspace ID is the part of your Orbit workspace URL that immediately follows the `app.orbit.love`. For example, if the URL was `https://app.orbit.love/my-workspace`, then your Orbit workspace ID is `my-workspace`.
 
 Follow these steps to add your `ORBIT_API_KEY` and `ORBIT_WORKSPACE_ID` to your GitHub repository secrets:
 
