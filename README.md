@@ -77,25 +77,6 @@ The following integration workflows are available to use, and more will be added
 * [DEV Community Blog](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/INSTRUCTIONS.md)
 
 To use a workflow, please read the instructions in the section pertaining to that integration.
-## <a name="dev"></a>DEV
-
-There are two checks included in the DEV automation template:
-
-1. Check for new blog post comments
-2. Check for new followers
-
-Each check is scheduled to occur once a day. If there are new followers or new blog post comments they will be added to your Orbit workspace as new members or new activities, respectively.
-
-To use this workflow:
-
-* Copy the [new_interaction.yml](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/new_interactions.yml) file into your own GitHub repository inside your `.github/workflows` directory
-
-* The automation requires your DEV and Orbit credentials be added to your GitHub repository secrets.
-    * Follow the steps in the [Adding Your Credentials to GitHub](#adding-your-credentials-to-github) section with the following two new secrets:
-        * `DEV_API_KEY`: Your DEV API key
-        * `DEV_USERNAME`: Your DEV username
-
-
 # <a name="contributing"></a>Contributing
 
 We :heart:  contributions! Please read the [Contribution Guidelines](CONTRIBUTING.md) on how to get involved and submit your own 3rd party integration template.
