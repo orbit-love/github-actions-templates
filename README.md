@@ -15,7 +15,7 @@
 
 # <a name="overview"></a>Overview
 
-Inside this repository are template YAML workflow files you can use to automate **3rd party integrations** with your Orbit workspace.
+Inside this repository are template YAML workflow files you can use to automate **third party integrations** with your Orbit workspace.
 
 **What are 3rd party integrations?**
 
