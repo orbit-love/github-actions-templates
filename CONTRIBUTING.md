@@ -12,6 +12,8 @@ For your template to be considered please make sure the following checklist is m
 * [ ] The integration uses the following environment variable names for the Orbit credentials: `ORBIT_WORKSPACE_ID` and `ORBIT_API_KEY`
 
 Once you are ready, you can open up a new pull request with your contribution and a member of the Orbit team will review it.
+
+If you are unsure of how to complete these items, please reach out to us, and we'd be glad to help! You can email us at [devrel@orbit.love](mailto:devrel@orbit.love) or you can open an issue in this repository.
 ## Opening an Issue
  
 We always welcome issues, if you've seen something that isn't quite right or you have a suggestion for a new feature, please go ahead and open an issue in this project. Include as much information as you have, it really helps.

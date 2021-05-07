@@ -38,7 +38,7 @@ Currently, this repository contains integration templates for:
 To use these automation templates, you need to have:
 
 * [GitHub Account](https://github.com/join)
-* [GitHub Repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo)
+* [GitHub Repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo), that you can name after the integration, e.g. `dev-orbit-integation`
 * [Orbit Account](https://app.orbit.love/signup)
 
 Once you have those items, you can navigate to the subfolder of the template you want to use, and follow the instructions inside the `README` in that subfolder.
