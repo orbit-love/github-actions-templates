@@ -13,11 +13,40 @@
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
 
-# <a name="overview"></a>Overview
+# Overview
 
-Each directory in this repository contains an automation workflow template for a specific community-built integration for Orbit workspaces.
+This repository helps you get up and running with third party integrations to Orbit in a matter of minutes.
 
-## <a name="adding-your-credentials-to-github"></a>Adding Your Credentials to GitHub
+Inside this repository are template YAML workflow files you can use to automate **third party integrations** with your Orbit workspace.
+
+**What are 3rd party integrations?**
+
+All Orbit users have access to a host of [built-in integrations](https://orbit.love/integrations/), such as GitHub, Twitter, Slack, Discord and others. These built-in integrations can be added and set up from within the Orbit app.
+
+Community-built, or 3rd party integrations, are additional integrations offered by the larger Orbit community. While not officially supported, they offer many opportunities to further extend the utility of the platform. 
+
+**What is this repository for?**
+
+Within each subfolder of this repository is a GitHub Actions workflow template file, along with instructions on how to use it. GitHub Actions is a runtime environment provided by GitHub to any GitHub user. You can run applications on GitHub Actions for free on any publicly availably (*not private*) repository.
+
+**What integration templates are available here?**
+
+Currently, this repository contains integration templates for:
+
+* [DEV Community](https://github.com/orbit-love/github-actions-templates/blob/main/DEV)
+
+**How do I use these template files?**
+
+To use these automation templates, you need to have:
+
+* [GitHub Account](https://github.com/join)
+* [GitHub Repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo), that you can name after the integration, e.g. `dev-orbit-integation`
+* [Orbit Account](https://app.orbit.love/signup)
+
+Once you have those items, you can navigate to the subfolder of the template you want to use, and follow the instructions inside the `README` in that subfolder.
+
+All of the integration templates require adding your Orbit credentials to GitHub. The instructions to do so are in the next section of this document.
+## Adding Your Credentials to GitHub
 
 All of the automation templates require credentials be added to your GitHub repository in the Secrets menu. Each integration has its own specific credentials that will need to be added. All of them require your Orbit API key and your Orbit workspace ID.
 
@@ -43,39 +72,20 @@ Follow these steps to add your `ORBIT_API_KEY` and `ORBIT_WORKSPACE_ID` to your 
 * `ORBIT_API_KEY`: Your Orbit API key
 * `ORBIT_WORKSPACE_ID`: Your Orbit workspace ID
 * ... other secrets for specific integrations
-# <a name="integration-instructions"></a>Integration Instructions
+# Integration Instructions
 
 The following integration workflows are available to use, and more will be added:
 
-* [DEV Community Blog](#dev)
+* [DEV Community Blog](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/INSTRUCTIONS.md)
 
 To use a workflow, please read the instructions in the section pertaining to that integration.
-## <a name="dev"></a>DEV
+# Contributing
 
-There are two checks included in the DEV automation template:
-
-1. Check for new blog post comments
-2. Check for new followers
-
-Each check is scheduled to occur once a day. If there are new followers or new blog post comments they will be added to your Orbit workspace as new members or new activities, respectively.
-
-To use this workflow:
-
-* Copy the [new_interaction.yml](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/new_interactions.yml) file into your own GitHub repository inside your `.github/workflows` directory
-
-* The automation requires your DEV and Orbit credentials be added to your GitHub repository secrets.
-    * Follow the steps in the [Adding Your Credentials to GitHub](#adding-your-credentials-to-github) section with the following two new secrets:
-        * `DEV_API_KEY`: Your DEV API key
-        * `DEV_USERNAME`: Your DEV username
-
-
-# <a name="contributing"></a>Contributing
-
-We :heart: contributions! Please read the [Contribution Guidelines](CONTRIBUTING.md) on how to get involved.
-# <a name="code-of-conduct"></a>Code of Conduct
+We :heart:  contributions! Please read the [Contribution Guidelines](CONTRIBUTING.md) on how to get involved and submit your own 3rd party integration template.
+# Code of Conduct
 
 This project has a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). We ask everyone to please adhere by its guidelines.
 
-# <a name="license"></a>License
+# License
 
 This project is under the [MIT License](LICENSE).
