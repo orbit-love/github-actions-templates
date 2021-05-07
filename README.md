@@ -13,7 +13,7 @@
 * [Code of Conduct](#code-of-conduct)
 * [License](#license)
 
-# <a name="overview"></a>Overview
+# Overview
 
 This repository helps you get up and running with third party integrations to Orbit in a matter of minutes.
 
@@ -46,7 +46,7 @@ To use these automation templates, you need to have:
 Once you have those items, you can navigate to the subfolder of the template you want to use, and follow the instructions inside the `README` in that subfolder.
 
 All of the integration templates require adding your Orbit credentials to GitHub. The instructions to do so are in the next section of this document.
-## <a name="adding-your-credentials-to-github"></a>Adding Your Credentials to GitHub
+## Adding Your Credentials to GitHub
 
 All of the automation templates require credentials be added to your GitHub repository in the Secrets menu. Each integration has its own specific credentials that will need to be added. All of them require your Orbit API key and your Orbit workspace ID.
 
@@ -72,20 +72,20 @@ Follow these steps to add your `ORBIT_API_KEY` and `ORBIT_WORKSPACE_ID` to your 
 * `ORBIT_API_KEY`: Your Orbit API key
 * `ORBIT_WORKSPACE_ID`: Your Orbit workspace ID
 * ... other secrets for specific integrations
-# <a name="integration-instructions"></a>Integration Instructions
+# Integration Instructions
 
 The following integration workflows are available to use, and more will be added:
 
 * [DEV Community Blog](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/INSTRUCTIONS.md)
 
 To use a workflow, please read the instructions in the section pertaining to that integration.
-# <a name="contributing"></a>Contributing
+# Contributing
 
 We :heart:  contributions! Please read the [Contribution Guidelines](CONTRIBUTING.md) on how to get involved and submit your own 3rd party integration template.
-# <a name="code-of-conduct"></a>Code of Conduct
+# Code of Conduct
 
 This project has a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). We ask everyone to please adhere by its guidelines.
 
-# <a name="license"></a>License
+# License
 
 This project is under the [MIT License](LICENSE).
