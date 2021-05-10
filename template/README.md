@@ -13,7 +13,7 @@ This data will be added to your Orbit workspace as new ACTIVITIES/MEMBERS.
 
 ## Instructions
 
-1. Go to your repository created during your [first-time setup](./FIRST_TIME_SETUP.md) and click on the Actions tab.
+1. Go to your repository created during your [first-time setup](../FIRST_TIME_SETUP.md) and click on the Actions tab.
 2. Click "set up a workflow yourself" and call it FILENAME.yml - delete the content so it is blank.
 3. Copy the contents of [FILENAME.yml](#) into your new workflow.
 4. ANY SPECIFIC WORKFLOW SETUP.
