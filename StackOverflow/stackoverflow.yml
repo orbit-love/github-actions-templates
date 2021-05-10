@@ -1,0 +1,20 @@
+name: Check for New Stackoverflow Questions and Add to Orbit
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Get Questions & Add to Orbit
+        run: npx @orbit-love/stackoverflow --questions --hours=1 --tag=PutYourTagHere
+        env:
+          ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+          ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+          STACK_APPS_KEY: ${{ secrets.STACK_APPS_KEY }}

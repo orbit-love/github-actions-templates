@@ -11,7 +11,7 @@ This data will be added to your Orbit workspace as new ACTIVITIES/MEMBERS.
 
 > If you are a developer and want to incorporate this integration into your existing applications then please check out the [standalone LANGUAGE library](#).
 
-## Instructions
+## Instructions
 
 1. Go to your repository created during your [first-time setup](../FIRST_TIME_SETUP.md) and click on the Actions tab.
 2. Click "set up a workflow yourself" and call it FILENAME.yml - delete the content so it is blank.

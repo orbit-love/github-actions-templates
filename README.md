@@ -27,7 +27,8 @@ The following integration workflows are available to use, and more will be added
 
 | Platform | Features |
 |---|---|
-| [DEV Community](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/INSTRUCTIONS.md) | <ul><li>New followers</li><li>New comments</li></ul> |
+| [DEV Community](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/README.md) | <ul><li>New followers</li><li>New comments</li></ul> |
+| [Stack Overflow](https://github.com/orbit-love/github-actions-templates/blob/main/StackOverflow/README.md) | <ul><li>New questions with tag</li></ul> |
 
 To use a workflow, please follow the integration-specific instructions.
 
