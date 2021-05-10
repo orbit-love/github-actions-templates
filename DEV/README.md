@@ -13,7 +13,7 @@ If there are new followers or new blog post comments they will be added to your 
 
 To use this workflow:
 
-* Copy the [new_interaction.yml](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/new_interactions.yml) file into your own GitHub repository inside your `.github/workflows` directory
+* Copy the [dev.yml](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/dev.yml) file into your own GitHub repository inside your `.github/workflows` directory
 
 * The automation requires your DEV and Orbit credentials be added to your GitHub repository secrets.
     * Follow the steps in the [Adding Your Credentials to GitHub](https://github.com/orbit-love/github-actions-templates/blob/main/README.md#adding-your-credentials-to-github) section in the main README with the following two additional secrets:
