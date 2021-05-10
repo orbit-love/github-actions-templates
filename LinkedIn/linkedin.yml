@@ -1,4 +1,4 @@
-name: Check for New DEV Interactions and Add to Orbit
+name: Check for New LinkedIn Interactions and Add to Orbit
 on:
   schedule:
     - cron: "0 0 */1 * *"
