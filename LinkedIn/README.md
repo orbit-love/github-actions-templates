@@ -16,6 +16,6 @@ To use this workflow:
 * The automation requires your LinkedIn and Orbit credentials be added to your GitHub repository secrets.
     * Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add the following two additional secrets:
         * `LINKEDIN_ORGANIZATION`: Your LinkedIn organization ID, i.e. if your LinkedIn URL is https://linkedin.com/company/28866695 then your ID is `28866695`
-        * `LINKEDIN_CODE`: Your LinkedIn browser refresh code. Follow the [First Time Setup Guide](https://github.com/orbit-love/community-ruby-linkedin-orbit/blob/main/docs/FIRST_TIME_INSTRUCTIONS.md) to obtain it if you have not done so previously.
+        * `LINKEDIN_TOKEN`: Your LinkedIn token. Follow the [First Time Setup Guide](https://github.com/orbit-love/community-ruby-linkedin-orbit/blob/main/docs/FIRST_TIME_INSTRUCTIONS.md) to obtain it if you have not done so previously.
 
 Once the workflow and credentials have been added to your GitHub repository, the workflow will be activated. You do not need to do anything else to activate it.
