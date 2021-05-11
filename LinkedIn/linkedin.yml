@@ -23,7 +23,7 @@ jobs:
       run: |
         linkedin_orbit --check-comments
       env:
-        DEV_API_KEY: ${{ secrets.LINKEDIN_ORGANIZATION }}
-        DEV_USERNAME: ${{ secrets.LINKEDIN_CODE }}
+        LINKEDIN_ORGANIZATION: ${{ secrets.LINKEDIN_ORGANIZATION }}
+        LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
         ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
         ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
