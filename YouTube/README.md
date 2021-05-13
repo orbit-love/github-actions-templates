@@ -1,4 +1,4 @@
-# PLATFORM-NAME Integration Template
+# YouTube Integration Template
 
 This integration runs every 24 hours and checks for new comments on every video on a specified channel.
 
