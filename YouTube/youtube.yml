@@ -1,0 +1,21 @@
+name: Check for New YouTube Comments and Add to Orbit
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Get Questions & Add to Orbit
+        run: npx @orbit-love/youtube --comments --hours=24
+        env:
+          ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+          ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}

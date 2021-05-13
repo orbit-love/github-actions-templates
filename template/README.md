@@ -2,7 +2,7 @@
 
 <!-- Summary -->
 
-This integration runs ever PERIOD OF TIME and does the following:
+This integration runs every PERIOD OF TIME and does the following:
 
 1. Checks for new blog post comments
 2. Checks for new followers
