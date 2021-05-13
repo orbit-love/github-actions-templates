@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Get Questions & Add to Orbit
+      - name: Get Comments & Add to Orbit
         run: npx @orbit-love/youtube --comments --hours=24
         env:
           ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
