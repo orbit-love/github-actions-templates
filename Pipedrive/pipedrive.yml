@@ -19,9 +19,25 @@ jobs:
       run: |
         gem update --system 3.1.4 -N
         gem install --no-document pipedrive_orbit
-    - name: Check for New Notes
+    - name: Check for New Deal Notes
       run: |
         pipedrive_orbit --check-notes
+      env:
+        LINKEDIN_ORGANIZATION: ${{ secrets.PIPEDRIVE_URL }}
+        LINKEDIN_TOKEN: ${{ secrets.PIPEDRIVE_API_KEY }}
+        ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+    - name: Check for New People Notes
+      run: |
+        pipedrive_orbit --check-people-notes
+      env:
+        LINKEDIN_ORGANIZATION: ${{ secrets.PIPEDRIVE_URL }}
+        LINKEDIN_TOKEN: ${{ secrets.PIPEDRIVE_API_KEY }}
+        ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+    - name: Check for New Deal Activities
+      run: |
+        pipedrive_orbit --check-activities
       env:
         LINKEDIN_ORGANIZATION: ${{ secrets.PIPEDRIVE_URL }}
         LINKEDIN_TOKEN: ${{ secrets.PIPEDRIVE_API_KEY }}
