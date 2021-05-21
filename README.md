@@ -21,6 +21,10 @@ Community-built, or 3rd party integrations, are additional integrations offered 
 
 Within each subfolder of this repository is a GitHub Actions workflow template file, along with instructions on how to use it. GitHub Actions is a runtime environment provided by GitHub to any GitHub user. You can run applications on GitHub Actions for free on any publicly available (*not private*) repository.
 
+# First Time Setup
+
+Before setting up an integration using GitHub Actions, you will need to follow the [First Time Setup Guide](./FIRST_TIME_SETUP.md)
+
 # Available Integrations
 
 The following integration workflows are available to use, and more will be added:
