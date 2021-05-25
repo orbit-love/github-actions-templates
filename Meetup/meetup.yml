@@ -19,7 +19,7 @@ jobs:
       run: |
         gem update --system 3.1.4 -N
         gem install --no-document meetup_orbit
-    - name: Check for New Events
+    - name: Check for New Event RSVPs
       run: |
         meetup_orbit --check-rsvps
       env:
