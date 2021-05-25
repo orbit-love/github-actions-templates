@@ -9,10 +9,10 @@ This data will be added to your Orbit workspace as new activities.
 ## Instructions
 
 1. Go to your repository created during your [first-time setup](../FIRST_TIME_SETUP.md) and click on the Actions tab.
-2. Click "set up a workflow yourself" and call it youtube.yml - delete the content so it is blank.
+2. Click "set up a workflow yourself" and call it reddit.yml - delete the content so it is blank.
 3. Copy the contents of [reddit.yml](reddit.yml) into your new workflow.
 4. Edit the items underneath line 11 to add your subreddits to watch.
-5. This automation requires credentials from YouTube to be added to your GitHub repository secrets.
+5. This automation requires credentials from Reddit to be added to your GitHub repository secrets.
     1. Head to your [Reddit App Preferences](https://www.reddit.com/prefs/apps/).
     2. Create a new app with the following settings:
         1. Name: `orbit-community-integration`
