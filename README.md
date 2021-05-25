@@ -36,6 +36,7 @@ The following integration workflows are available to use, and more will be added
 | [LinkedIn](https://github.com/orbit-love/github-actions-templates/blob/main/LinkedIn/README.md) | <ul><li>New comments on posts</li></ul> |
 | [YouTube](https://github.com/orbit-love/github-actions-templates/blob/main/YouTube/README.md) | <ul><li>New comments across all videos on a channel</li></ul> |
 | [Pipedrive](https://github.com/orbit-love/github-actions-templates/blob/main/Pipedrive/README.md) | <ul><li>New notes on deals</li><li>New notes on people</li><li>New activities on deals</li></ul> |
+| [Meetup](https://github.com/orbit-love/github-actions-templates/blob/main/Meetup/README.md) | <ul><li>New RSVPs for Meetup group events</li></ul> |
 
 To use a workflow, please follow the integration-specific instructions.
 
