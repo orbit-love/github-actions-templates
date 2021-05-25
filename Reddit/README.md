@@ -1,6 +1,6 @@
 # Reddit Integration Template
 
-This integration runs every 24 hours and checks for new posts in a specified subreddit.
+This integration runs every hour and checks for new posts and comments in a specified subreddit.
 
 This data will be added to your Orbit workspace as new activities.
 
