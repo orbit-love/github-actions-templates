@@ -1,0 +1,28 @@
+name: Check for New Meetup Interactions and Add to Orbit
+on:
+  schedule:
+    - cron: "0 0 */1 * *"
+  workflow_dispatch:
+jobs:
+  comments-workflow:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        submodules: recursive
+    - name: Set up Ruby 2.7.2
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.2
+    - name: Bundle Install
+      run: |
+        gem update --system 3.1.4 -N
+        gem install --no-document meetup_orbit
+    - name: Check for New Event RSVPs
+      run: |
+        meetup_orbit --check-rsvps
+      env:
+        MEETUP_URLNAME: ${{ secrets.MEETUP_URLNAME }}
+        ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
