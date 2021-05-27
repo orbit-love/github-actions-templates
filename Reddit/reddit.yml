@@ -1,7 +1,7 @@
 name: Check for New Reddit Posts and Add to Orbit
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npx @orbit-love/reddit --posts --hours=24 --subreddit "${{ matrix.subreddit }}"
+      - run: npx @orbit-love/reddit --posts --comments --hours=1 --subreddit "${{ matrix.subreddit }}"
         name: 'Get Posts & Add to Orbit'
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID}}
