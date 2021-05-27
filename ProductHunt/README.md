@@ -6,7 +6,7 @@ This integration runs every hour and checks for new votes on specific Product Hu
 
 This data will be added to your Orbit workspace as new activities.
 
-> If you are a developer and want to incorporate this integration into your existing applications then please check out the [standalone LANGUAGE library](https://github.com/orbit-love/community-js-producthunt-orbit).
+> If you are a developer and want to incorporate this integration into your existing applications then please check out the [standalone JavaScript library](https://github.com/orbit-love/community-js-producthunt-orbit).
 
 ## Instructions
 
