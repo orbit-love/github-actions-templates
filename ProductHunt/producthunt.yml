@@ -1,0 +1,25 @@
+name: Check for New Product Hunt Votes and Add to Orbit
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        product:
+          - 297453
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npx @orbit-love/producthunt --votes --id "${{matrix.product}}"
+        name: 'Get Votes & Add to Orbit'
+        env:
+          PRODUCT_HUNT_API_KEY: ${{ secrets.PRODUCT_HUNT_API_KEY}}
+          PRODUCT_HUNT_API_SECRET: ${{ secrets.PRODUCT_HUNT_API_SECRET}}
+          ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY}}
+          ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID}}
