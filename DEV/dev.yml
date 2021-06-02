@@ -40,6 +40,6 @@ jobs:
         dev_orbit --check-organization-comments
       env:
         DEV_API_KEY: ${{ secrets.DEV_API_KEY }}
-        DEV_USERNAME: ${{ secrets.DEV_ORGANIZATION }}
+        DEV_ORGANIZATION: ${{ secrets.DEV_ORGANIZATION }}
         ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
         ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
