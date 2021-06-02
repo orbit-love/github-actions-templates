@@ -19,14 +19,27 @@ jobs:
       run: |
         gem update --system 3.1.4 -N
         gem install --no-document dev_orbit
-    - name: Check for New Comments
+    - name: Check for New Comments for a DEV User
       run: |
         dev_orbit --check-comments
-    - name: Check for New Followers
+      env:
+        DEV_API_KEY: ${{ secrets.DEV_API_KEY }}
+        DEV_USERNAME: ${{ secrets.DEV_USERNAME }}
+        ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+    - name: Check for New Followers for a DEV User
       run: |
         dev_orbit --check-followers
       env:
         DEV_API_KEY: ${{ secrets.DEV_API_KEY }}
         DEV_USERNAME: ${{ secrets.DEV_USERNAME }}
+        ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+    - name: Check for New Comments for a DEV Organization
+      run: |
+        dev_orbit --check-organization-comments
+      env:
+        DEV_API_KEY: ${{ secrets.DEV_API_KEY }}
+        DEV_USERNAME: ${{ secrets.DEV_ORGANIZATION }}
         ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
         ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
