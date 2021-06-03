@@ -6,6 +6,10 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tag:
+          - firsttag
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
@@ -13,7 +17,7 @@ jobs:
         with:
           node-version: '14'
       - name: Get Questions & Add to Orbit
-        run: npx @orbit-love/stackoverflow --questions --hours=1 --tag=PutYourTagHere
+        run: npx @orbit-love/stackoverflow --questions --hours=1 --tag= "${{matrix.tag}}"
         env:
           ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
           ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
