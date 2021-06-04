@@ -1,8 +1,9 @@
 # Reddit Integration Template
 
-This integration runs every hour and checks for new posts and comments in a specified subreddit.
+This integration runs every hour and checks for new posts and comments in a specified subreddit. This data will be added to your Orbit workspace as new activities.
 
-This data will be added to your Orbit workspace as new activities.
+![](https://github.com/orbit-love/community-js-reddit-orbit/blob/main/docs/activity-post.png)
+![](https://github.com/orbit-love/community-js-reddit-orbit/blob/main/docs/activity-comment.png)
 
 > If you are a developer and want to incorporate this integration into your existing applications then please check out the [standalone JavaScript library](https://github.com/orbit-love/community-js-reddit-orbit).
 
@@ -22,5 +23,13 @@ This data will be added to your Orbit workspace as new activities.
         5. Redirect URI: `https://orbit.love`
     3. Take note of your `Client ID` which is just below your app name, and your `Client Secret`.
     4. Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USERNAME`, and `REDDIT_PASSWORD` values.
+
+### Filtering Posts & Comments
+
+You can pass in a `--filter=term` flag to filter the results by a single term. To do this, find the line in the template which starts `npx @orbit-love/reddit` and add a space and `--filter="your term"` to the end.
+
+- For posts this will match if the post title, url or body text contain the term.
+- For comments this will match if it was left on a post with a title containing the term, or the comment itself contains the term.
+- For both the filter term is not case sensitive.
 
 Once the workflow and credentials have been added to your GitHub repository, the workflow will be activated. You do not need to do anything else to activate it.
