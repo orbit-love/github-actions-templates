@@ -1,0 +1,37 @@
+name: Check for New Circle Interactions and Add to Orbit
+on:
+  schedule:
+    - cron: "0 0 */1 * *"
+  workflow_dispatch:
+jobs:
+  comments-workflow:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        submodules: recursive
+    - name: Set up Ruby 2.7.2
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.2
+    - name: Bundle Install
+      run: |
+        gem update --system 3.1.4 -N
+        gem install --no-document circle_orbit
+    - name: Check for New Comments on Circle Spaces posts
+      run: |
+        circle_orbit --check-comments
+      env:
+        CIRCLE_API_KEY: ${{ secrets.CIRCLE_API_KEY }}
+        CIRCLE_URL: ${{ secrets.CIRCLE_URL }}
+        ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
+    - name: Check for New Posts in Circle Spaces
+      run: |
+        circle_orbit --check-posts
+      env:
+        CIRCLE_API_KEY: ${{ secrets.CIRCLE_API_KEY }}
+        CIRCLE_URL: ${{ secrets.CIRCLE_URL }}
+        ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
+        ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
