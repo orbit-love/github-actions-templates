@@ -1,8 +1,8 @@
 # YouTube Integration Template
 
-This integration runs every 24 hours and checks for new comments on every video on a specified channel.
+This integration runs every 24 hours and checks for new comments on every video on a specified channel. This data will be added to your Orbit workspace as new activities.
 
-This data will be added to your Orbit workspace as new activities.
+![](https://raw.githubusercontent.com/orbit-love/community-js-youtube-orbit/main/docs/activity.png)
 
 > If you are a developer and want to incorporate this integration into your existing applications then please check out the [standalone JavaScript library](https://github.com/orbit-love/community-js-youtube-orbit).
 
