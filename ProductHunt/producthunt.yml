@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npx @orbit-love/producthunt --votes --id "${{matrix.product}}"
+      - run: npx @orbit-love/producthunt --votes --comments --id "${{matrix.product}}"
         name: 'Get Votes & Add to Orbit'
         env:
           PRODUCT_HUNT_API_KEY: ${{ secrets.PRODUCT_HUNT_API_KEY}}
