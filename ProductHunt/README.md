@@ -1,6 +1,6 @@
 # Product Hunt Integration Template
 
-This integration runs every hour and checks for new votes on specific Product Hunt Products.
+This integration runs every hour and checks for new votes and comments on specific Product Hunt Products.
 
 ![](https://github.com/orbit-love/community-js-producthunt-orbit/raw/main/docs/activity.png)
 
