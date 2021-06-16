@@ -1,4 +1,4 @@
-name: Check for New Product Hunt Votes and Add to Orbit
+name: Check for New Product Hunt Interactions and Add to Orbit
 on:
   schedule:
     - cron: "0 * * * *"
