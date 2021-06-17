@@ -39,7 +39,7 @@ The following integration workflows are available to use, and more will be added
 | [Meetup](https://github.com/orbit-love/github-actions-templates/blob/main/Meetup) | <ul><li>New RSVPs for Meetup group events</li></ul> |
 | [Reddit](https://github.com/orbit-love/github-actions-templates/blob/main/Reddit) | <ul><li>New posts in subreddits</li><li>New comments in subreddits</li><li>Ability to filter to specific term</li></ul> |
 | [Notion](https://github.com/orbit-love/github-actions-templates/blob/main/Notion) | <ul><li>New Notes in a Notion database</li></ul> |
-| [Product Hunt](https://github.com/orbit-love/github-actions-templates/blob/main/ProductHunt) | <ul><li>New votes on products</li></ul> |
+| [Product Hunt](https://github.com/orbit-love/github-actions-templates/blob/main/ProductHunt) | <ul><li>New votes on products</li><li>New comments on products</li></ul> |
 | [Circle](https://github.com/orbit-love/github-actions-templates/blob/main/Circle) | <ul><li>New posts in Circle Spaces</li><li>New comments on Circle Spaces posts</li></ul> |
 
 To use a workflow, please follow the integration-specific instructions.
