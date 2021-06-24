@@ -13,7 +13,7 @@ If there are new check-ins they will be added to your Orbit workspace.
 
 To use this workflow:
 
-* Copy the [planning_center.yml](https://github.com/orbit-love/github-actions-templates/blob/main/Meetup/planning_center.yml) file into your own GitHub repository inside your `.github/workflows` directory
+* Copy the [planning_center.yml](https://github.com/orbit-love/github-actions-templates/blob/main/PlanningCenter/planning_center.yml) file into your own GitHub repository inside your `.github/workflows` directory
 
 * The automation requires your Planning Center app ID and Planning Center API secret group URL be added to your GitHub repository secrets.
     * Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add the following additional secrets:
