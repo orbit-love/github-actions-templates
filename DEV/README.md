@@ -2,6 +2,8 @@
 
 > Automate integrating DEV interactions into your Orbit workspace with this GitHub Actions template
 
+![Screenshot of activity](new-comment-screenshot.png)
+
 <hr />
 
 There are three checks included in the DEV automation template, they all occur once a day.
@@ -27,6 +29,10 @@ If there are new followers or new blog post comments in any of the checks they w
         * `DEV_API_KEY`: Your DEV API key
         * `DEV_USERNAME`: Your DEV user account name
 
+* This workflow will automatically filter out any DEV comments that are older than the most recent DEV comment in your Orbit workspace currently.
+    * To perform a historical import, that will send to Orbit **all** of your DEV comments add the `--historical-import` flag to the workflow file on line 24: `dev_orbit --check-comments --historical-import`
+    * **You should only need to run a historical import once, and it is recommended to remove the `--historical-import` flag after.**
+
 **To use this workflow for a DEV organization account:**
 
 * Copy the [dev.yml](https://github.com/orbit-love/github-actions-templates/blob/main/DEV/dev.yml) file into your own GitHub repository inside your `.github/workflows` directory
@@ -36,6 +42,10 @@ If there are new followers or new blog post comments in any of the checks they w
     * Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add the following two additional secrets:
         * `DEV_API_KEY`: Your DEV API key
         * `DEV_ORGANIZATION`: Your DEV organization name (i.e. `orbit` for the Orbit organization on DEV)
+
+* This workflow will automatically filter out any DEV comments that are older than the most recent DEV comment in your Orbit workspace currently.
+    * To perform a historical import, that will send to Orbit **all** of your DEV comments add the `--historical-import` flag to the workflow file on line 40: `dev_orbit --check-organization-comments --historical-import`
+    * **You should only need to run a historical import once, and it is recommended to remove the `--historical-import` flag after.**
 
 **To use this workflow for *both* a DEV organization and a DEV user:**
 
