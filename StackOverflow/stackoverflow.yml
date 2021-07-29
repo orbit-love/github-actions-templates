@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '14'
       - name: Get Questions & Add to Orbit
-        run: npx @orbit-love/stackoverflow --questions --answers --hours=1 --tag= "${{matrix.tag}}"
+        run: npx @orbit-love/stackoverflow --questions --answers --hours=1 --tag="${{matrix.tag}}"
         env:
           ORBIT_WORKSPACE_ID: ${{ secrets.ORBIT_WORKSPACE_ID }}
           ORBIT_API_KEY: ${{ secrets.ORBIT_API_KEY }}
