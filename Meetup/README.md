@@ -17,4 +17,8 @@ To use this workflow:
     * Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add the following additional secret:
         * `MEETUP_URLNAME`: Your Meetup group URL ID, i.e. if your Meetup group URL is `https://www.meetup.com/meetup-group-test-123` then your group ID is `meetup-group-test-123`
 
+* This workflow will automatically filter out any Meetup RSVPs that are older than the most recent RSVP for an event in your Orbit workspace currently.
+    * To perform a historical import, that will send to Orbit **all** of your Meetup RSVPs for events add the `--historical-import` flag to the workflow file on line 24: `meetup_orbit --check-rsvps --historical-import`
+    * **You should only need to run a historical import once, and it is recommended to remove the `--historical-import` flag after.**
+
 Once the workflow and credentials have been added to your GitHub repository, the workflow will be activated. You do not need to do anything else to activate it.
