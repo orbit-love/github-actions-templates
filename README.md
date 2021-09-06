@@ -45,6 +45,13 @@ The following integration workflows are available to use, and more will be added
 
 To use a workflow, please follow the integration-specific instructions.
 
+# Frequently Asked Questions
+
+* **Does this have anything to do with Orbit's GitHub Integration?** No - setting up community integrations using GitHub Actions is independent of the integration. We are essentially using GitHub Actions as a free host and scheduler of our code. 
+* **Are there any requirements of the repository I put my .yml files in?** No - it can be called anything, and contain any other files. As long as your workflows are inside of the `.github/workflows` directory it can go in any repository. 
+* **How much does it cost?** GitHub provides a generous but limited allowance for using GitHub Actions in private repositories which should be  plenty for most communities. If you are using a lot of GitHub Actions either from Orbit or elsewhere, consider making your repository public for unlimited free runs. [More info](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions#included-storage-and-minutes).
+* **Do I need to do any maintainence?** Once you set up a GitHub Actions workflow you shouldn't need to do much to it to keep it running. If you are ingesting very large amounts of data you may hit rate limits - check the logs of any failed executions if this happens for more information. GitHub also require some repository activity on the main branch every 60 days to keep actions running. You should receive an email 7 days before this with notice. [More info](https://github.community/t/no-notification-workflow-disabled-after-60-days/182169).
+
 # Contributing
 
 We :heart:  contributions! Please read the [Contribution Guidelines](.github/CONTRIBUTING.md) on how to get involved and submit your own 3rd party integration template.
