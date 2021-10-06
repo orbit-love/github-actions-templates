@@ -17,7 +17,7 @@ To use this workflow:
 
 * The automation requires your LinkedIn and Orbit credentials be added to your GitHub repository secrets.
     * Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add the following two additional secrets:
-        * `LINKEDIN_ORGANIZATION`: Your LinkedIn organization ID, i.e. if your LinkedIn URL is https://linkedin.com/company/28866695 then your ID is `28866695`
+        * `LINKEDIN_ORGANIZATION`: Your LinkedIn organization ID, i.e. if your LinkedIn URL is https://linkedin.com/company/28866695 then your ID is `urn:li:organization:28866695`
         * `LINKEDIN_TOKEN`: Your LinkedIn token. Follow the [First Time Setup Guide](https://github.com/orbit-love/community-ruby-linkedin-orbit/blob/main/docs/FIRST_TIME_INSTRUCTIONS.md) to obtain it if you have not done so previously.
 
 * This workflow will automatically filter out any LinkedIn comments that are older than the most recent LinkedIn comment in your Orbit workspace currently.
