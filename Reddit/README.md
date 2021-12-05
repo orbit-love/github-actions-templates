@@ -13,7 +13,8 @@ This integration runs every hour and checks for new posts and comments in a spec
 2. Click "set up a workflow yourself" and call it reddit.yml - delete the content so it is blank.
 3. Copy the contents of [reddit.yml](reddit.yml) into your new workflow.
 4. Edit the items underneath line 11 to add your subreddits to watch.
-5. This automation requires credentials from Reddit to be added to your GitHub repository secrets. The Reddit account cannot have 2FA enabled. If yours has 2FA enabled, please create a new Reddit username without 2FA to use for the import.
+5. This automation requires credentials from Reddit to be added to your GitHub repository secrets.\*
+
    1. Head to your [Reddit App Preferences](https://www.reddit.com/prefs/apps/).
    2. Create a new app with the following settings:
       1. Name: `orbit-community-integration`
@@ -23,6 +24,11 @@ This integration runs every hour and checks for new posts and comments in a spec
       5. Redirect URI: `https://orbit.love`
    3. Take note of your `Client ID` which is just below your app name, and your `Client Secret`.
    4. Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USERNAME`, and `REDDIT_PASSWORD` values.
+
+\*PLEASE NOTE: For this to work, your Reddit account should have 2FA _disabled_ AND needs to have a passwords set.
+
+- If you used your Google or Apple account to sign up to Reddit and don't have an account you can disconnect it and then you'll be able to set an account (an reconnect your Google or Apple account after).
+- If you want to have 2FA enabled on your main Reddit account (you probably should): create an additional acocunt to just set up this integration and don't use your main account.
 
 ### Filtering Posts & Comments
 
