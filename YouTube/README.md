@@ -33,4 +33,4 @@ This should be fine for a majority of channels, but if you are concerned you wil
 ## Performing a Historical Import
 You may want to perform a one-time historical import to fetch all your previous YouTube interactions and bring them into your Orbit workspace. Set the hours tag to 720 for 30 days of import to do so. [You may want to import less history based on your quota.](#notes-about-quota)
 
-Change the hours value on line 16 in your orbit-integrations/actions/workflows/youtube.yml. Then head to your actions and re-run the workflow manually. Once run successfully, disable the current workflow, change the hours value back to 1, and find the workflow in the actions tab and enable it.
+Change the hours value on line 16 in your orbit-integrations/actions/workflows/youtube.yml. Then head to your actions and re-run the workflow manually. Once run successfully, disable the current workflow, change the hours value back to 24, and find the workflow in the actions tab and enable it.
