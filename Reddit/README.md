@@ -46,6 +46,6 @@ Once the workflow and credentials have been added to your GitHub repository, the
 
 ### Performing a Historical Import
 
-You may want to perform a one-time historical import to fetch all your previous LinkedIn interactions and bring them into your Orbit workspace. Set the hours tag to 720 for 30 days of import to do so.
+You may want to perform a one-time historical import to fetch all your previous Reddit interactions and bring them into your Orbit workspace. Set the hours tag to 720 for 30 days of import to do so.
 
 Change the `hours` value on line 20 in your `orbit-integrations/actions/workflows/reddit.yml`. Then head to your actions and re-run the workflow manually. Once run successfully, disable the current workflow, change the `hours` value back to 1, and find the workflow in the actions tab and enable it.
