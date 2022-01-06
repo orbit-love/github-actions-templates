@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        subreddit:
-          - javascript
-          - vuejs
+#        subreddit:
+#          - javascript
+#          - vue
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
