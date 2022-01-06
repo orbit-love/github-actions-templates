@@ -12,7 +12,7 @@ This integration runs every hour and checks for new posts and comments in a spec
 1. Go to your repository created during your [first-time setup](../FIRST_TIME_SETUP.md) and click on the Actions tab.
 2. Click "set up a workflow yourself" and call it reddit.yml - delete the content so it is blank.
 3. Copy the contents of [reddit.yml](reddit.yml) into your new workflow.
-4. At a minimum, replace line 12 and 13 with at least one subreddit. Then uncomment this section in order for the workflow to work. Make sure to do replace the default values, otherwise you will be **importing activity from these subreddits.**
+4. At a minimum, replace line 12 and 13 with at least one subreddit. Then uncomment this section in order for the workflow to work. Make sure to replace the default values, otherwise you will be **importing activity from these subreddits.**
 5. This automation requires credentials from Reddit to be added to your GitHub repository secrets.
 
    1. Head to your [Reddit App Preferences](https://www.reddit.com/prefs/apps/).
