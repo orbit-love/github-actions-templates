@@ -30,10 +30,6 @@ This integration runs every hour and checks for new posts and comments in a spec
 - If you used your Google or Apple account to sign up to Reddit and don't have an account you can disconnect it and then you'll be able to set an account (an reconnect your Google or Apple account after).
 - If you want to have 2FA enabled on your main Reddit account (you probably should): create an additional acocunt to just set up this integration and don't use your main account.
 
-PLEASE NOTE: For this to work, your Reddit account should have 2FA *disabled* AND needs to have a passwords set.
-- If you used your Google or Apple account to sign up to Reddit and don't have an account you can disconnect it and then you'll be able to set an account (an reconnect your Google or Apple account after).
-- If you want to have 2FA enabled on your main Reddit account (you probably should): create an additional acocunt to just set up this integration and don't use your main account.
-
 ### Filtering Posts & Comments
 
 You can pass in a `--filter=term` flag to filter the results by a single term. To do this, find the line in the template which starts `npx @orbit-love/reddit` and add a space and `--filter="your term"` to the end.
