@@ -14,7 +14,7 @@ This integration runs every 24 hours and checks for new comments on every video 
 4. This automation requires credentials from YouTube to be added to your GitHub repository secrets.
     1. Create a project in the [Google Developers Console](https://console.developers.google.com/)
     2. After creating your project, make sure the YouTube Data API is one of the services that your application is registered to use.
-    3. Go to the Credentials area of your application and create an API Key. Take note of the API Key as it will only be shown once.
+    3. Go to the Credentials area of your application and create an API Key. Take note of the API Key as it will only be shown once. [Obtaining YouTube authorization credentials](https://developers.google.com/youtube/registering_an_application).
     4. Get your Channel's ID by [following these steps](https://support.google.com/youtube/answer/3250431).
     5. Follow the steps in the [GitHub Actions Templates First Time Setup Guide](https://github.com/orbit-love/github-actions-templates/blob/main/FIRST_TIME_SETUP.md) and add `YOUTUBE_API_KEY` and `YOUTUBE_CHANNEL_ID` values.
 
